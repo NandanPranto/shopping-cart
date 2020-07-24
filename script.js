@@ -1,49 +1,4 @@
-
-// const plusBtn = document.getElementById("plusBtnMobile");
-// plusBtn.addEventListener("click",function(){
-//     let molbilePlusClickedValue = updateByPlusClick("mobile");
-
-// });
-
-// const plusBtnCasing = document.getElementById("plusBtnCasing");
-// plusBtnCasing.addEventListener("click",function(){
-//     updateByPlusClick("casing");
-// });
-
-// const minusBtn = document.getElementById("minusBtnMobile");
-// minusBtn.addEventListener("click",function(){
-//     updateByMinusClick("mobile");
-// });
-
-// const minusBtncasing = document.getElementById("minusBtnCasing");
-// minusBtncasing.addEventListener("click",function(){
-//     updateByMinusClick("casing");
-// });
-
-// function updateByPlusClick(id){
-    // const click = document.getElementById(id).value;
-    // const clickAmount = parseFloat(click);
-    // const totalPlusClick =  clickAmount + 1;
-    // document.getElementById(id).value = totalPlusClick;
-
-    // const currentMobileBalance = document.getElementById("mobileBalance").innerText;
-    // const currentMobileBalanceConverted = parseFloat(currentMobileBalance);
-    // const totalMobileBalance =  currentMobileBalanceConverted * totalPlusClick ;
-    // document.getElementById("mobileBalance").innerText = totalMobileBalance;
-// }
-
-// function updateByMinusClick(id){
-    // const click = document.getElementById(id).value;
-    // const clickAmount = parseFloat(click);
-    // const totalMinusClick =  clickAmount - 1;
-    // if (totalMinusClick >= 0){
-    //     document.getElementById(id).value = totalMinusClick;
-    // }
-    // else{
-    //     document.getElementById(id).value = 0;
-    // }   
-// }
-
+//mobile er plus button er click er kaj
 
 const plusBtn = document.getElementById("plusBtnMobile");
 plusBtn.addEventListener("click",function(){
@@ -60,6 +15,9 @@ plusBtn.addEventListener("click",function(){
     totalByAddAndMinus();
 
 });
+// kaj  ses ....mobile er plus button er click er
+
+//casing er plus button er click er kaj
 
 const plusBtnCasing = document.getElementById("plusBtnCasing");
 plusBtnCasing.addEventListener("click",function(){
@@ -77,6 +35,10 @@ plusBtnCasing.addEventListener("click",function(){
 
 });
 
+// kaj  ses ....casing er plus button er click er
+
+//mobile er minus button er click er kaj
+
 const minusBtn = document.getElementById("minusBtnMobile");
 minusBtn.addEventListener("click",function(){
    
@@ -93,6 +55,10 @@ minusBtn.addEventListener("click",function(){
 
 });
 
+// kaj  ses ....mobile er minus button er click er
+
+//casing er minus button er click er kaj
+
 const minusBtncasing = document.getElementById("minusBtnCasing");
 minusBtncasing.addEventListener("click",function(){
    
@@ -108,6 +74,11 @@ minusBtncasing.addEventListener("click",function(){
     taxByAddAndMinus();
     totalByAddAndMinus();
 });
+
+// kaj  ses ....casing er minus button er click er
+
+
+
 
 function subTotalByAddAndMinus(){
 
@@ -180,3 +151,94 @@ function clickInMinusBtn(id){
     } 
 }
 
+//check out button er kaj
+
+document.getElementById("check-out").addEventListener("click", function(){
+    alert("Taka ache? Dollar ! Dollar ! Dollar e asche balance....fokir");
+})
+
+//kaj ses
+
+//remove image e click er kaj ....mobile er
+
+const removeItem = document.getElementById("removeMobile");
+removeItem.addEventListener("click",function(){
+   
+    const moblieArea = document.getElementById("cartItemMobile");
+    moblieArea.style.display = "none" ; 
+});
+
+//kaj ses
+
+//remove image e click er kaj ... casing er
+
+
+const removeItem1 = document.getElementById("removeCasing");
+removeItem1.addEventListener("click",function(){
+
+    const cartArea = document.getElementById("cartItemCasing");
+    cartArea.style.display = "none" ;
+
+    const balanceArea = document.getElementById("cartItemBalance");
+    balanceArea.style.display = "none" ; 
+  
+    const btnArea = document.getElementById("cartItemBtn");
+    btnArea.style.display = "none" ; 
+});
+
+//kaj ses
+
+
+
+
+
+
+
+
+
+
+
+// const plusBtn = document.getElementById("plusBtnMobile");
+// plusBtn.addEventListener("click",function(){
+//     let molbilePlusClickedValue = updateByPlusClick("mobile");
+
+// });
+
+// const plusBtnCasing = document.getElementById("plusBtnCasing");
+// plusBtnCasing.addEventListener("click",function(){
+//     updateByPlusClick("casing");
+// });
+
+// const minusBtn = document.getElementById("minusBtnMobile");
+// minusBtn.addEventListener("click",function(){
+//     updateByMinusClick("mobile");
+// });
+
+// const minusBtncasing = document.getElementById("minusBtnCasing");
+// minusBtncasing.addEventListener("click",function(){
+//     updateByMinusClick("casing");
+// });
+
+// function updateByPlusClick(id){
+    // const click = document.getElementById(id).value;
+    // const clickAmount = parseFloat(click);
+    // const totalPlusClick =  clickAmount + 1;
+    // document.getElementById(id).value = totalPlusClick;
+
+    // const currentMobileBalance = document.getElementById("mobileBalance").innerText;
+    // const currentMobileBalanceConverted = parseFloat(currentMobileBalance);
+    // const totalMobileBalance =  currentMobileBalanceConverted * totalPlusClick ;
+    // document.getElementById("mobileBalance").innerText = totalMobileBalance;
+// }
+
+// function updateByMinusClick(id){
+    // const click = document.getElementById(id).value;
+    // const clickAmount = parseFloat(click);
+    // const totalMinusClick =  clickAmount - 1;
+    // if (totalMinusClick >= 0){
+    //     document.getElementById(id).value = totalMinusClick;
+    // }
+    // else{
+    //     document.getElementById(id).value = 0;
+    // }   
+// }
