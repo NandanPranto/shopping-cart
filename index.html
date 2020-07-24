@@ -14,9 +14,9 @@
 
    <section>
       <div class="container">
-         <div class="cart">
+         <div class="cart" id="totalcart">
             <div class="col-md-12 col-lg-10 mx-auto">
-               <div class="cart-item">
+               <div class="cart-item" id="cartItemMobile">
                   <div class="row">
                      <div class="col-md-7 center-item">
                         <img src="images/product-1.png" alt="">
@@ -30,12 +30,12 @@
                            <button class="btn btn-default plusBtn" id="plusBtnMobile"><i class="fas fa-plus"></i></button>
                         </div>
                         <h5>$<span id="mobileBalance">1219</span></h5>
-                        <img src="images/remove.png" alt="" class="remove-item">
+                        <img src="images/remove.png" alt="" class="remove-item" id="removeMobile">
                      </div>
                   </div>
                </div>
 
-               <div class="cart-item">
+               <div class="cart-item" id="cartItemCasing">
                   <div class="row">
                      <div class="col-md-7 center-item mx-auto">
                         <img src="images/product-2.png" alt="">
@@ -49,12 +49,12 @@
 
                         </div>
                         <h5>$<span id="casingBalance">59</span></h5>
-                        <img src="images/remove.png" alt="" class="remove-item">
+                        <img src="images/remove.png" alt="" class="remove-item" id="removeCasing">
                      </div>
                   </div>
                </div>
 
-               <div class="cart-item">
+               <div class="cart-item" id="cartItemBalance">
                   <div class="row">
 
                      <div class="col-md-8">
@@ -70,8 +70,8 @@
                      </div>
                   </div>
                </div>
-               <div class="col-md-12 pt-4 pb-4">
-                  <button type="button" class="btn btn-success check-out">Check Out</button>
+               <div class="col-md-12 pt-4 pb-4" id="cartItemBtn">
+                  <button type="button" class="btn btn-success check-out" id="check-out">Check Out</button>
                </div>
             </div>
          </div>
